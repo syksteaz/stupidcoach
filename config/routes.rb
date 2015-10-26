@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'coaching_controller/answer'
+  get 'answer' => 'coaching#answer'
 
-  get 'coaching_controller/ask'
+  get 'ask' => 'coaching#ask'
 
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -57,4 +58,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
